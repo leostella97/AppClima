@@ -1,6 +1,8 @@
 // variaveis e selecao de elementos
 
-const apiKey = "99292d8c04554b4fdd0d7f6290bcd9b0";
+const fs = require('fs');
+const config = JSON.parse(fs.readFileSync('config.json'));
+const apiKey = config.apiKey;
 const apiCountryURL = "https://countryflagsapi.com/png/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
